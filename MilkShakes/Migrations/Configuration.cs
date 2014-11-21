@@ -27,6 +27,7 @@ namespace MilkShakes.Migrations
               new Milk { Name = "Skimmed" },
               new Milk { Name = "Soya milk" }
             );
+
             //
 
             context.Fruits.AddOrUpdate(
@@ -35,6 +36,7 @@ namespace MilkShakes.Migrations
              new Fruit { Name = "Banana" },
              new Fruit { Name = "Lemon" }
            );
+
             //
         }
     }
