@@ -6,8 +6,16 @@ using System.Web;
 
 namespace MilkShakes.Models.Entities
 {
-    public class MilkshakeDB
+    public class MilkshakeDB : DbContext
     {
+
+        public MilkshakeDB()
+            : base("name=DefaultConnection")
+        {
+            
+        }
+
+
         public DbSet<Milkshake> Milkshakes { get; set; }
         public DbSet<Milk> Milks { get; set; }
         public DbSet<Fruit> Fruits { get; set; }
